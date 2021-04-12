@@ -15,7 +15,7 @@ def confirm_enroll(timeout=30):
     seconds_waited = 0
     while seconds_waited < timeout:
         enroll_btn2 = pyautogui.locateCenterOnScreen(
-            "udemy-enrollnow2.png", grayscale=True, confidence=0.9)
+            "udemyEnrollerImages/udemy-enrollnow2.png", grayscale=True, confidence=0.9)
         print(f"enroll_btn2: {enroll_btn2}")
         if enroll_btn2:
             pyautogui.click(enroll_btn2)
@@ -27,11 +27,11 @@ def confirm_enroll(timeout=30):
 
 def enroll_in_course():
     enroll_btn1 = pyautogui.locateCenterOnScreen(
-        "udemy-enrollnow.png", grayscale=True, confidence=0.9)
+        "udemyEnrollerImages/udemy-enrollnow.png", grayscale=True, confidence=0.9)
     start_button = pyautogui.locateCenterOnScreen(
-        "udemy-startcourse.png", grayscale=True, confidence=0.8)
+        "udemyEnrollerImages/udemy-startcourse.png", grayscale=True, confidence=0.8)
     goto_button = pyautogui.locateCenterOnScreen(
-        "udemy-gotocourse.png", grayscale=True, confidence=0.9)
+        "udemyEnrollerImages/udemy-gotocourse.png", grayscale=True, confidence=0.9)
     print(f"enroll_btn1: {enroll_btn1}")
     if enroll_btn1:
         pyautogui.click(enroll_btn1)
