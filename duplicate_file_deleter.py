@@ -2,7 +2,7 @@ import os
 import sys
 
 file_list = []
-if len(sys.argv):
+if sys.argv:
     currdir = sys.argv[1]
 else:
     currdir = input("Enter the directory path to check duplicates in: ")
