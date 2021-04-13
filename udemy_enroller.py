@@ -20,9 +20,8 @@ def confirm_enroll(timeout=30):
         if enroll_btn2:
             pyautogui.click(enroll_btn2)
             break
-        else:
-            sleep(2)
-            seconds_waited += 2
+        sleep(2)
+        seconds_waited += 2
 
 
 def enroll_in_course():
