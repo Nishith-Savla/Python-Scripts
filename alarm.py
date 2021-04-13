@@ -7,8 +7,7 @@ amPm = str(input("am or pm: "))
 
 if(amPm == "pm"):
     alarmHour = alarmHour + 12
-else:
-    alarmHour
+
 while True:
     if(alarmHour == datetime.datetime.now().hour and alarmMinute == datetime.datetime.now().minute):
         print("Wake up")
