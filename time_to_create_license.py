@@ -64,6 +64,5 @@ def calculate_license_generation_time(name: str, n_agents: int, others: str, tim
 	return (no_of_people_before // n_agents + 1) * time_per_person
 
 
-
 if __name__ == '__main__':
 	print(calculate_license_generation_time("Eric", 2, "Adam Caroline Rebecca Frank"),"minutes")
