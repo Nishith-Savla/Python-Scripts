@@ -7,6 +7,6 @@ if sys.argv:
 else:
     currdir = input("Enter the directory path to check duplicates in: ")
 for directories, folders, files in os.walk(currdir):
-    if count(files) > 1:
+    if len(files) > 1:
         print(files)
 
