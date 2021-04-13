@@ -13,7 +13,7 @@ def get_word_count():
 	print("Enter the words: ")
 
 	words = []
-	for i in range(n_words):
+	for _ in range(n_words):
 		words.append(str(input()))
 	
 	# Calculate
