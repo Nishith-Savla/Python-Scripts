@@ -18,7 +18,7 @@ def get_word_count():
 		print(word_count, end=" ")
 
 
-def distinct_word_count(words: list[str]) -> int, tuple[int]:
+def distinct_word_count(words: list[str]) -> tuple[int, tuple[int]]:
 	"""Count the number of distinct words in the list.
 
 	Parameters
@@ -28,7 +28,7 @@ def distinct_word_count(words: list[str]) -> int, tuple[int]:
 	
 	Returns
 	=======
-	len(word_count), word_count.values(): int, tuple[int]
+	len(word_count), word_count.values(): tuple[int, tuple[int]]
 		A tuple containing the number of distinct words and list of occurences of words.
 	"""
 	word_count = {}
