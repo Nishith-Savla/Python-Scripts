@@ -15,7 +15,7 @@ def compare_strings(string1, string2):
 
     return string1 == string2
 
-print(compare_strings("Have a Great Day!", "Have a great day?")) # True
-print(compare_strings("It's raining again.", "its raining, again")) # True
-print(compare_strings("Learn to count: 1, 2, 3.", "Learn to count: one, two, three.")) # False
-print(compare_strings("They found some body.", "They found somebody.")) # False
+print(compare_strings("Have a Great Day!", "Have a great day?"))  # True
+print(compare_strings("It's raining again.", "its raining, again"))  # True
+print(compare_strings("Learn to count: 1, 2, 3.", "Learn to count: one, two, three."))  # False
+print(compare_strings("They found some body.", "They found somebody."))  # False
