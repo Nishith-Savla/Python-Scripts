@@ -1,13 +1,13 @@
 def is_jumping_number(number: int) -> bool:
     """Checks if the number is jumping number.
 
-    Arguments
-    =========
+    Parameters
+    ----------
     number: int
         The number to check if it is jumping number or not.
 
     Returns
-    =======
+    -------
     bool
         Whether the number is jumping number or not.
 
@@ -23,13 +23,13 @@ def is_jumping_number(number: int) -> bool:
 def get_jumping_numbers(limit: int) -> list[int]:
     """Get all the jumping numbers less than or greater to limit.
 
-    Arguments
-    =========
+    Parameters
+    ----------
     limit: int
         The limit upto which the find the jumping jumping_numbers.
 
     Returns
-    =======
+    -------
     list[int]
         A list of all jumping numbers less than or equal to limit.
 

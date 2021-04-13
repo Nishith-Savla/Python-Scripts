@@ -3,11 +3,11 @@
 from typing import List, Iterator
 
 
-def check_is_lower(island_mat: List[List[int]], rows: int, cols: int, i: int, j: int):
+def check_is_lower(island_mat: List[List[int]], rows: int, cols: int, i: int, j: int) -> bool:
     """Checks if the current area is lower than the surroundings.
 
     Parameters
-    ==========
+    ----------
     island_mat: List[List[int]]
         The matrix composed of the cells containing the height of the region.
     rows: int
@@ -20,7 +20,7 @@ def check_is_lower(island_mat: List[List[int]], rows: int, cols: int, i: int, j:
         The index of the current column in the row.
 
     Returns
-    =======
+    -------
     is_lower: bool
         True if the surrounding have more heights(there are height on all four sides greater than the current height),
          else False
@@ -55,11 +55,11 @@ def check_is_lower(island_mat: List[List[int]], rows: int, cols: int, i: int, j:
     return sides_greater == 4
 
 
-def calculate_water_collected(island_mat: List[Iterator[int]], rows: int, cols: int):
+def calculate_water_collected(island_mat: List[Iterator[int]], rows: int, cols: int) -> int:
     """Calculates the total number of cells (regions) where water will be collected after rain.
 
     Parameters
-    ==========
+    ----------
     island_mat: List[List[int]]
         The matrix composed of the cells containing the height of the region.
     rows: int
@@ -68,7 +68,7 @@ def calculate_water_collected(island_mat: List[Iterator[int]], rows: int, cols: 
         The number of colums of the matrix.
 
     Returns
-    =======
+    -------
     total_water_collected: int
         The number of cells where water will be collected after rain.
     """

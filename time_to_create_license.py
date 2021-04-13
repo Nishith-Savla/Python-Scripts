@@ -1,6 +1,6 @@
 """
 Question
-========
+--------
 New Driver's License
 
 You have to get a new driver's license and you show up at the office at the same time as 4 other people. The office says that they will see everyone in alphabetical order and it takes 20 minutes for them to process each new license. All of the agents are available now, and they can each see one customer at a time. How long will it take for you to walk out of the office with your new license?
@@ -23,7 +23,7 @@ Sample Output
 40
 
 Documentation
-=============
+-------------
 Calculates the time the given person will take to get his/her driving license,
 if the license if given alphabetically and n agents can work simultaneously.
 """
@@ -41,7 +41,7 @@ def calculate_license_generation_time(name: str, n_agents: int, others: str, tim
     """Calculate the license generation time based to the alphabetical order of the people present.
 
     Parameters
-    ==========
+    ----------
     name: str
         The name of the person of calculate the time for.
 
@@ -55,7 +55,7 @@ def calculate_license_generation_time(name: str, n_agents: int, others: str, tim
         Time taken by an agent to generate the license for a single person
 
     Returns
-    =======
+    -------
     time_taken: int
         The time that will be taken to get the license of the person of the name.
     """

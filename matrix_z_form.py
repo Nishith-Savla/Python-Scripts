@@ -5,7 +5,7 @@ def get_matrix() -> Iterable[Iterable[int]]:
     """Get the square integer matrix from the user.
 
     Returns
-    =======
+    -------
     Iterable[Iterable[int]]
         The square integer matrix input from the user.
 
@@ -23,7 +23,7 @@ def print_z_matrix(matrix: Iterable[Iterable[int]]) -> None:
     """Print the z form of the matrix.
 
     Parameters
-    ==========
+    ----------
     matrix: Iterable[Iterable[int]]
         The square matrix to print the Z form.
 
