@@ -1,13 +1,13 @@
 import time
 import pyautogui
 import pyperclip
-from PIL import Image
-# from jaraco import clipboard
 from PythonMagick import Image
 
-brave_window = pyautogui.getWindowsWithTitle('vlabs')[0]
-vscode_window = pyautogui.getWindowsWithTitle('vlabs')[0]
-brave_window.activate()
-time.sleep(1)
-pyautogui.screenshot('ss.png', [43, 25, 1053, 704])
-Image("ss.png").write("clipboard:")
+window_name = input("Enter windows title to screenshot: ")
+coordinates = tuple(map(int, input("Enter the coordinates for the screenshot: ").split()))
+screenshot_filename = input("Enter the filename for the screenshot: ")
+
+window_to_screenshot = pyautogui.getWindowsWithTitle(window_name)[0]
+window_to_screenshot.activate()
+pyautogui.screenshot('ss.png', coordinates)
+Image(screenshot_filename).write("clipboard:")
