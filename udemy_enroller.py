@@ -41,7 +41,7 @@ def enroll_in_course():
 
 
 def enrollAll(count):
-    for i in range(count):
+    for _ in range(count):
         print(pyautogui.getActiveWindowTitle())
         if "Udemy" not in pyautogui.getActiveWindowTitle():
             pyautogui.hotkey('ctrl', 'tab')
