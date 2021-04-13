@@ -1,4 +1,5 @@
-import string, sys
+import string
+import sys
 p = sys.argv[1]
 s = 0
 for c in p:
