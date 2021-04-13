@@ -14,7 +14,7 @@ def loopB():
     while True:
         if(a==3):
             a = 1
-            break;
+            break
     print("B done")
     print(a)
 
