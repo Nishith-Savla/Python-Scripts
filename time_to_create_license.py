@@ -1,4 +1,6 @@
-'''
+"""
+Question
+========
 New Driver's License
 
 You have to get a new driver's license and you show up at the office at the same time as 4 other people. The office says that they will see everyone in alphabetical order and it takes 20 minutes for them to process each new license. All of the agents are available now, and they can each see one customer at a time. How long will it take for you to walk out of the office with your new license?
@@ -19,19 +21,22 @@ Sample Input
 
 Sample Output 
 40
-'''
-"""Calculates the time the given person will take to get his/her driving license,
-if the license if given alphabetically and n agents can work simultaneously."""
+
+Documentation
+=============
+Calculates the time the given person will take to get his/her driving license,
+if the license if given alphabetically and n agents can work simultaneously.
+"""
 def find_license_generation_time():
-	"""Gets the data for the calculate_license_generation_time() function and calls it."""
+	"""Get the data for the calculate_license_generation_time() function and calls it."""
 	name = input("Enter your name: ")
 	n_agents = input("Enter the number of agents: ")
 	others = input("Enter the name of other people: ")
 	return calculate_license_generation_time(name, n_agents, others)
 
 
-def calculate_license_generation_time(name: str, n_agents: int, others: str, time_per_person: float =20):
-	"""Calculates the license generation time based to the alphabetical order of the people present.
+def calculate_license_generation_time(name: str, n_agents: int, others: str, time_per_person: float =20) -> int:
+	"""Calculate the license generation time based to the alphabetical order of the people present.
 
 	Parameters
 	==========
@@ -49,7 +54,7 @@ def calculate_license_generation_time(name: str, n_agents: int, others: str, tim
 
 	Returns
 	=======
-	time_taken
+	time_taken: int
 		The time that will be taken to get the license of the person of the name.
 	"""
 	people_list = others.split()
