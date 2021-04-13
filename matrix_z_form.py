@@ -13,7 +13,7 @@ def get_matrix() -> Iterable[Iterable[int]]:
     length = int(input("Enter the length of the square matrix: ").split()[0])
     matrix = []
     print("Input the matrix: ")
-    for i in range(length):
+    for _ in range(length):
         matrix.append(tuple(map(int, input().split()[:length])))
 
     return matrix
