@@ -22,8 +22,8 @@ def get_matrix() -> Iterable[Iterable[int]]:
 def print_z_matrix(matrix: Iterable[Iterable[int]]) -> None:
     """Print the z form of the matrix.
 
-    Arguments
-    =========
+    Parameters
+    ==========
     matrix: Iterable[Iterable[int]]
         The square matrix to print the Z form.
 
