@@ -1,4 +1,3 @@
-import sys
 from tkinter import Tk, Label
 import time
 
