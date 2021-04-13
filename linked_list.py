@@ -26,7 +26,7 @@ class MovieLinkedList:
         second_last_node = last_node = None
         movie_node = self.head
 
-        while(movie_node):
+        while movie_node:
             second_last_node = last_node
             last_node = movie_node
             movie_node = movie_node.next
@@ -39,7 +39,7 @@ class MovieLinkedList:
             return
 
         movie_node = self.head
-        while(movie_node):
+        while movie_node:
             print(f"{movie_node.movie_name} {movie_node.rel_date} => ", end="")
             movie_node = movie_node.next
         print(None)
