@@ -1,5 +1,4 @@
 
-# Complete the countApplesAndOranges function below.
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     print(len(list(filter(lambda d: (d + a) >= s, apples))))
     print(len(list(filter(lambda e: (e + b) <= t, oranges))))
