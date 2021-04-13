@@ -2,7 +2,8 @@ import pyautogui
 from PythonMagick import Image
 
 window_name = input("Enter windows title to screenshot: ")
-coordinates = tuple(map(int, input("Enter the coordinates for the screenshot: ").split()))
+coordinates = tuple(
+    map(int, input("Enter the coordinates for the screenshot: ").split()))
 screenshot_filename = input("Enter the filename for the screenshot: ")
 
 window_to_screenshot = pyautogui.getWindowsWithTitle(window_name)[0]

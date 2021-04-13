@@ -5,7 +5,7 @@ def is_jumping_number(number: int) -> bool:
     =========
     number: int
         The number to check if it is jumping number or not.
-    
+
     Returns
     =======
     bool
@@ -18,7 +18,7 @@ def is_jumping_number(number: int) -> bool:
             return False
 
     return True
-    
+
 
 def get_jumping_numbers(limit: int) -> list[int]:
     """Get all the jumping numbers less than or greater to limit.

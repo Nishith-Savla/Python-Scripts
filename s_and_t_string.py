@@ -23,19 +23,19 @@ S and T consist of lowercase letters only.
 
 
 def permute_string(str1: str, str2: str) -> str:
-	"""1.
-	permuted_list = []
-	for letter in str1:  # O(m)
-		if letter not in permuted_list:  # O(l)
-			permuted_list.append(letter)
-	for letter in str2:  # O(n)
-		if letter not in permuted_list: # O(l)
-			permuted_list.append(letter)
-	return "".join(permuted_list)  # O(l)
-	"""
-	mp = {c: i for i, c in enumerate(str1)}
-	return "".join(sorted(str2, key=lambda x: mp.get(x, 26)))
+    """1.
+    permuted_list = []
+    for letter in str1:  # O(m)
+            if letter not in permuted_list:  # O(l)
+                    permuted_list.append(letter)
+    for letter in str2:  # O(n)
+            if letter not in permuted_list: # O(l)
+                    permuted_list.append(letter)
+    return "".join(permuted_list)  # O(l)
+    """
+    mp = {c: i for i, c in enumerate(str1)}
+    return "".join(sorted(str2, key=lambda x: mp.get(x, 26)))
 
-	
+
 if __name__ == "__main__":
-	print(permute_string("cba", "abcd"))
+    print(permute_string("cba", "abcd"))

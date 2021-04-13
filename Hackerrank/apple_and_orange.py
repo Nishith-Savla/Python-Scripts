@@ -4,7 +4,7 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     print(len(list(filter(lambda d: (d + a) >= s, apples))))
     print(len(list(filter(lambda e: (e + b) <= t, oranges))))
 
-    
+
 if __name__ == '__main__':
     st = input().split()
 

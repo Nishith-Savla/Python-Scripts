@@ -9,4 +9,3 @@ else:
 for directories, folders, files in os.walk(currdir):
     if len(files) > 1:
         print(files)
-

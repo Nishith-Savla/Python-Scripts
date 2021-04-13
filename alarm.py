@@ -11,5 +11,6 @@ if(amPm == "pm"):
 while True:
     if(alarmHour == datetime.datetime.now().hour and alarmMinute == datetime.datetime.now().minute):
         print("Wake up")
-        playsound('C:\\Users\\Nishith\\Downloads\\alarm.mp3')  # Replace it with the path to your file
+        # Replace it with the path to your file
+        playsound('C:\\Users\\Nishith\\Downloads\\alarm.mp3')
         break

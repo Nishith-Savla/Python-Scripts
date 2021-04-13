@@ -16,9 +16,9 @@ while True:
     print("Press 'r' to resume")
     print("Press 'v' to set volume")
     print("Press 'e' to exit")
-    
+
     ch = input("['p', 'r', 'v', 'e']>>>")
-    
+
     if ch = 'p':
         mixer.music.pause()
     elif ch = 'r':
