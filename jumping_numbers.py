@@ -1,8 +1,15 @@
-def is_jumping_number(number):
-    """Checks if the number is jumping number
+def is_jumping_number(number: int) -> bool:
+    """Checks if the number is jumping number.
 
-    :number: TODO
-    :returns: TODO
+    Arguments
+    =========
+    number: int
+        The number to check if it is jumping number or not.
+    
+    Returns
+    =======
+    bool
+        Whether the number is jumping number or not.
 
     """
     number_str = str(number)
@@ -13,11 +20,18 @@ def is_jumping_number(number):
     return True
     
 
-def get_jumping_numbers(limit):
-    """Get all the jumping numbers less than or greater to limit
+def get_jumping_numbers(limit: int) -> list[int]:
+    """Get all the jumping numbers less than or greater to limit.
 
-    :limit: TODO
-    :returns: TODO
+    Arguments
+    =========
+    limit: int
+        The limit upto which the find the jumping jumping_numbers.
+
+    Returns
+    =======
+    list[int]
+        A list of all jumping numbers less than or equal to limit.
 
     """
     jumping_numbers = []
