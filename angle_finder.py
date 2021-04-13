@@ -1,6 +1,4 @@
-"""
-https://www.hackerrank.com/challenges/find-angle/problem
-"""
+"""https://www.hackerrank.com/challenges/find-angle/problem"""
 
 import math
 
