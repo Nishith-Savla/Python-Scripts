@@ -1,6 +1,4 @@
-import time
 import pyautogui
-import pyperclip
 from PythonMagick import Image
 
 window_name = input("Enter windows title to screenshot: ")

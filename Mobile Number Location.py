@@ -1,4 +1,4 @@
-from phonenumbers import geocoder, carrier, parse, NumberParseException, PhoneNumberFormat, format_number
+from phonenumbers import geocoder, carrier, parse, NumberParseException
 
 
 def get_location_and_carrier(number):
