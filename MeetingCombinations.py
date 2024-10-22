@@ -1,4 +1,4 @@
-import itertools 
+import itertools
 
 
 def get_meeting_couples(participants: list[str]):
