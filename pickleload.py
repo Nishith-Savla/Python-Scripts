@@ -2,6 +2,7 @@ import pickle
 
 filename = 'FACTORY.DAT'
 
+
 def load_pickle_file():
     global filename
     with open(filename, 'rb') as file:
@@ -22,7 +23,7 @@ def count(factory_type: str):
     count = 0
     for _, _, _, f_type in loaded:
         if f_type == factory_type:
-            count+=1
+            count += 1
     return count
 
 

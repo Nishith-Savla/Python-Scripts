@@ -5,31 +5,39 @@ import csv
 
 pd.set_option('display.max_columns', None)
 
+
 def get_stock_data(url, body):
     """Fetch stock data from the API."""
     response = requests.post(url, json=body)
     data = response.json()
     return data["data"]["results"]
 
+
 def rank_column(df, column_name):
     # Set negative and missing values to a large number
-    df[column_name] = df[column_name].mask((df[column_name].isna()) | (df[column_name] <= 0), 100000)
+    df[column_name] = df[column_name].mask(
+        (df[column_name].isna()) | (df[column_name] <= 0), 100000)
 
     # Divide the df into 10 sections based on the column and rank them from 1 to 10
-    df[f'{column_name}_rank'] = pd.qcut(df[column_name].rank(method='first'), 10, labels=False) + 1
-    
+    df[f'{column_name}_rank'] = pd.qcut(
+        df[column_name].rank(method='first'), 10, labels=False) + 1
+
     return df
+
 
 def save_to_csv(stocks, filename):
     """Save stock data to a CSV file."""
 
-    keys = ["26wpct", "subindustry", "apef", "mrktCapf", "name", "divDps", "priceCfoR", "4wpct", "sector", "lastPrice", "ticker", "pbr", "ps", "evebitd", "5yCagrPct"]
+    keys = ["26wpct", "subindustry", "apef", "mrktCapf", "name", "divDps", "priceCfoR",
+            "4wpct", "sector", "lastPrice", "ticker", "pbr", "ps", "evebitd", "5yCagrPct"]
 
     with open(filename, 'w', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, keys)
         dict_writer.writeheader()
         for stock in stocks:
-            dict_writer.writerow(stock['stock']['advancedRatios'] | stock['stock']['info'])
+            dict_writer.writerow(
+                stock['stock']['advancedRatios'] | stock['stock']['info'])
+
 
 def process_stocks(filename):
     df = pd.read_csv(filename)
@@ -59,6 +67,7 @@ def process_stocks(filename):
 
     # Save the df to a new csv file
     df.to_csv('stocks_processed.csv', index=False)
+
 
 def main():
     url = "https://api.tickertape.in/screener/query"
@@ -94,6 +103,7 @@ def main():
     save_to_csv(stocks, 'stocks.csv')
     process_stocks('stocks.csv')
     os.remove('stocks.csv')
+
 
 if __name__ == "__main__":
     main()
