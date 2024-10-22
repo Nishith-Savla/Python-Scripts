@@ -1,2 +1,7 @@
 .vscode/
 tmp/
+
+# Spreadsheets
+*.csv
+*.xls
+*.xlsx
